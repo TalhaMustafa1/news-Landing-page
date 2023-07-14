@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --soft-orange:hsl(35, 77%, 62%);
+    --soft-red:hsl(5, 85%, 63%);
+    --off-white:hsl(36, 100%, 99%);
+    --grayish-blue:hsl(233, 8%, 79%);
+    --dark-grayish-blue:hsl(236, 13%, 42%);
+    --very-dark-blue:hsl(240, 100%, 5%);
+    --font-primary:'Inter', sans-serif;
+}
+body{
+    font-family:var(--font-primary);
+    font-size: 17px !important;
+}
+.navbar-nav{
+    margin-left: auto;
+    display: flex;
+    gap:1.4rem;
+}
+
+main{
+    margin-block:40px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--soft-red);
+}
+.col-md-8 img {
+    width: 100%; /* Make the image take up the available space */
+  }
+  .col-md-6 h1{
+    font-weight: 800;
+    color: black;
+    font-size:60px;
+  }
+  button{
+    color: white;
+    background-color:var(--very-dark-blue) ;
+    padding:7px 30px;
+    max-width:40%;
+  }
+  button:hover{
+    background-color: var(--soft-red);
+  }
+ 
+  .para-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .para-button p{
+    line-height: 1.4rem;
+    font-size: 1.2em;
+  }
+  .right-data{
+    background-color: var(--very-dark-blue);
+  }
+  .content{
+    padding: 1rem;
+  }
+  .content h1{
+    color:var(--soft-orange) ;
+    font-size:3.2em;
+    margin-bottom: 30px;
+  }
+  .content h2{
+    color: var(--off-white);
+    font-size: 1.7em;
+  }
+  .content h2:hover{
+    color:var(--soft-orange);
+  }
+  .content p{
+    color: var(--grayish-blue);
+  }
+.sub-content{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;  
+  gap: 20px;
+ 
+}
+.container .row .col-md-4{
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.container .row .col-md-4 h3{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.container .row .col-md-4 .card-content h2{
+color: var(--grayish-blue);
+font-size:3em;
+
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.section-2{
+  margin-top:30px;
+}
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: white; 
+  margin-block:90px;
+  
+}
+ 
+
+@media screen and (max-width:780px) {
+
+  .section-2 .container .row .col-md-4{
+    margin-top: 20px;
+  }
+  button{
+    color: white;
+    background-color:var(--very-dark-blue) ;
+    padding:7px 30px;
+    max-width:60%;
+  }
+  .section-1{
+    margin-bottom: 30px;
+  }
+  .col-md-8{
+    margin-bottom: 30px;
+  }
+  .d-sm-block{
+    background-image: url(".");
+  }
+} 
